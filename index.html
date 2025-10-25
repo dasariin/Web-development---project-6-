@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product Showcase – Infinity Bluetooth Speaker</title>
+
+  <!-- Google Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Swiper & AOS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo"><span class="icon">P</span>Product<span style="color:var(--accent)">Show</span></div>
+      <nav>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn-cta" href="#pricing">Buy Now</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-left" data-aos="fade-up">
+        <div class="price-bubble">New — Intro Offer</div>
+        <h1>Infinity Bluetooth Speaker<br><span style="color:var(--accent)">Powerful sound, tiny footprint</span></h1>
+        <p class="tag">Portable, water-resistant speaker with 24-hour battery life, deep bass, and voice assistant support — perfect for travel and small gatherings.</p>
+        <div class="actions">
+          <a href="#pricing" class="btn-cta">Buy Now</a>
+          <a class="btn-cta secondary" href="#features">Learn More</a>
+        </div>
+
+        <div class="features" id="features">
+          <div class="feature" data-aos="fade-right"><i class="fa-solid fa-bolt"></i><h4>24h Battery</h4><p>All-day playback with quick-charge support.</p></div>
+          <div class="feature" data-aos="fade-right"><i class="fa-solid fa-water"></i><h4>IPX6 Splashproof</h4><p>Use it poolside without worry.</p></div>
+          <div class="feature" data-aos="fade-right"><i class="fa-solid fa-bluetooth"></i><h4>Seamless Bluetooth</h4><p>Fast pairing and stable connection.</p></div>
+        </div>
+      </div>
+
+      <aside class="card" data-aos="fade-left">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/product1.jpg" alt="Speaker 1"></div>
+            <div class="swiper-slide"><img src="assets/product2.jpg" alt="Speaker 2"></div>
+            <div class="swiper-slide"><img src="assets/product3.jpg" alt="Speaker 3"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="product-info">
+          <h3>Infinity Bluetooth Speaker</h3>
+          <p class="muted">Compact. Loud. Long-lasting.</p>
+          <div class="price-section">
+            <div class="price">₹2,499</div>
+            <div class="buttons">
+              <a class="btn-cta" href="#contact">Enquire</a>
+              <a class="btn-outline" href="#">Wishlist</a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="card" data-aos="fade-up">
+      <h2>Pricing Plans</h2>
+      <div class="pricing">
+        <div class="plan"><h3>Basic</h3><p>Single speaker</p><div class="price">₹1,999</div><p>1-year warranty</p><button>Buy</button></div>
+        <div class="plan best"><h3>Best Value</h3><p>Pair (stereo)</p><div class="price">₹3,999 <span>(save ₹499)</span></div><p>2-year warranty + case</p><button>Buy</button></div>
+        <div class="plan"><h3>Pro</h3><p>Bundle</p><div class="price">₹6,999</div><p>Includes accessories</p><button>Buy</button></div>
+      </div>
+
+      <h3>Specifications</h3>
+      <dl class="specs">
+        <div><dt>Battery</dt><dd>24 hours (QC support)</dd></div>
+        <div><dt>Connectivity</dt><dd>Bluetooth 5.2, AUX</dd></div>
+        <div><dt>Waterproof</dt><dd>IPX6</dd></div>
+        <div><dt>Weight</dt><dd>420 grams</dd></div>
+      </dl>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="card" data-aos="fade-up">
+      <h2>What customers say</h2>
+      <div class="testimonials">
+        <div class="testimonial"><strong>Priya R.</strong><p>"Great sound for the price. Battery lasted two days!"</p></div>
+        <div class="testimonial"><strong>Arjun M.</strong><p>"Compact but powerful. The bass surprised me."</p></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card" data-aos="fade-up">
+      <h2>Contact & Inquiry</h2>
+      <form onsubmit="event.preventDefault();alert('Demo form submitted!');">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <textarea name="message" rows="4" placeholder="Your message / inquiry"></textarea>
+        <button type="submit">Send Inquiry</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-grid">
+        <div><strong>ProductShow</strong><div>© 2025 ProductShow. All rights reserved.</div></div>
+        <div><div>Follow us</div><div class="socials">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div></div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
